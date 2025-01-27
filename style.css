@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&amp;display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -70,6 +70,9 @@ nav{
 .nav-container .links a:hover::before{
     width: 100%;
 }
+.nav-container .links a:hover{
+    color: rgb(255,0,0);
+}
 .nav-container .contact-btn{
     background-color: transparent;
     padding: 5px 20px;
@@ -84,9 +87,6 @@ nav{
 .nav-container .contact-btn:hover, .nav-container .contact-btn:hover a{
     background-color: rgb(255,0,0);
     color: white;
-}
-.nav-container .links a:hover{
-    color: rgb(255,0,0);
 }
 .dropdown{
     z-index: 100;
@@ -224,6 +224,60 @@ section{
  background-color: transparent;
  font-weight: 700;
  box-shadow: 0 0 40px rgb(255,0,0);
+}
+
+/* New Hire Form Section */
+.form-container {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+}
+h1 {
+    text-align: center;
+    color: white;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+label {
+    color: white;
+    font-weight: bold;
+}
+textarea, input {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #555;
+    color: white;
+    background-color: #222;
+}
+button {
+    padding: 10px;
+    font-size: 1.2rem;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+button:hover {
+    background-color: darkred;
+}
+
+/* Responsive styling for mobile */
+@media (max-width: 768px) {
+    .form-container {
+        width: 90%;
+    }
+    button {
+        width: 100%;
+    }
 }
 @media (max-width:884px) {
     body{
