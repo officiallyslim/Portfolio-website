@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Page</title>
+</head>
+<body>
+    <h1>Fill out this form</h1>
+    <form action="process_form.php" method="POST">
+        <label for="name">What is your name?</label>
+        <input type="text" name="name" id="name" required>
+        <br><br>
+
+        <label for="email">What is your email?</label>
+        <input type="email" name="email" id="email" required>
+        <br><br>
+
+        <label for="age">How old are you?</label>
+        <input type="number" name="age" id="age" required>
+        <br><br>
+
+        <label for="feedback">What do you think about our service?</label>
+        <textarea name="feedback" id="feedback" rows="4" required></textarea>
+        <br><br>
+
+        <label for="rating">How would you rate our service? (1 - Poor, 5 - Excellent)</label>
+        <select name="rating" id="rating">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        <br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
