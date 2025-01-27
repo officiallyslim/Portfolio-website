@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hire Slim Questionnaire</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your existing CSS -->
+</head>
+<body>
+    <div class="container">
+        <h1>What job would you like to hire Slim for?</h1>
+        <form action="process_form.php" method="POST" enctype="multipart/form-data">
+            <label for="job">Job Description:</label>
+            <textarea name="job_description" id="job" required></textarea>
+            
+            <label for="image">Do you have an example image or idea of how it should look like?</label>
+            <textarea name="image_description" id="image" required></textarea>
+            <input type="file" name="example_image[]" id="example_image" multiple>
+            
+            <label for="previous_services">Have you hired or had any services with Slim before?</label>
+            <textarea name="previous_services" id="previous_services" required></textarea>
+            
+            <label for="email">Please provide your email:</label>
+            <input type="email" name="email" id="email" required>
+            
+            <label for="discord">Enter your Discord username (if you have one):</label>
+            <input type="text" name="discord" id="discord">
+            
+            <button type="submit">Finish</button>
+        </form>
+    </div>
+</body>
+</html>
